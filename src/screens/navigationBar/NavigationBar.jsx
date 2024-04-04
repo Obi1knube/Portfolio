@@ -1,4 +1,5 @@
 import React from "react";
+import "./navigation.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { navigationLinks } from "../../helpers/navigationLinks";
@@ -14,11 +15,19 @@ function createLinks() {
 function NavigationBar() {
   return (
     <div id="home">
-      <Navbar>
-        <Navbar.Brand href="#home">Obiora Ezeasor</Navbar.Brand>
+      <Navbar className="navigation__container" expand="md">
+        <Navbar.Brand style={{ marginLeft: "1rem" }} href="#home">
+          Obiora Ezeasor
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse>
-          <Nav>
+        <Navbar.Collapse
+          style={{
+            justifyContent: "flex-end",
+            marginRight: "1rem",
+            borderBlockColor: "none",
+          }}
+        >
+          <Nav className="links" style={{ margin: "0, 1rem" }}>
             {createLinks()}
           </Nav>
         </Navbar.Collapse>
