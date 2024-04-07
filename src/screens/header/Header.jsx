@@ -13,8 +13,8 @@ function Header() {
           "Front-End Developer",
           "Back-End Developer",
           "Full  stack Developer",
-          "Or!",
-          "a Coder",
+          "and!",
+          "a Multi-skilled Engineer",
           "",
           "",
         ]}
