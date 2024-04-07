@@ -3,6 +3,8 @@ import Navigation from "./screens/navigationBar/NavigationBar";
 import "./App.css";
 import Particles from "./Particles";
 import Header from "./screens/header/Header";
+import AboutMe from "./screens/aboutMe/AboutMe";
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <Navigation />
       <Header />
       <Particles />
+      <AboutMe/>
     </div>
   );
 }
