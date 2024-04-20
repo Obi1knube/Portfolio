@@ -20,7 +20,7 @@ function NavigationBar() {
       collapseOnSelect
       expand="md">
         <Navbar.Brand style={{ marginLeft: "1rem" }} href="#home">
-          Obiora Ezeasor
+          Obiora Ezeasor Nwosu
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
