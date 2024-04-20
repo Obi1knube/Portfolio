@@ -70,7 +70,13 @@ function Technologies() {
               break;
           }
           return (
-            <div key={idx} className="tech_icon">
+            <a
+              key={idx}
+              href={e.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="tech_icon"
+            >
               <IconComponent
                 className="tech_card"
                 style={{ fontSize: iconSize }}
@@ -78,7 +84,7 @@ function Technologies() {
               <span style={{ margin: "5px", fontSize: "1.5rem" }}>
                 {e.name}{" "}
               </span>
-            </div>
+            </a>
           );
         })}
       </div>
