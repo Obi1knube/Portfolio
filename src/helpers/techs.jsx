@@ -1,13 +1,43 @@
 // techs.jsx
 export const techs = [
-  { name: "React", iconName: "react" },
-  { name: "Javascript", iconName: "javascript" },
-  { name: "CSS3", iconName: "css3" },
-  { name: "HTML 5", iconName: "html5" },
-  {name:"Nodejs",iconName:"nodejs"},
-  { name: "Mongodb", iconName: "mongodb" },
-  { name: "Mysql", iconName: "mysql" },
-  { name: "Express", iconName: "express" },
-  { name: "Jquery", iconName: "jquery" },
-    { name: "Git", iconName: "git" },
+  {
+    name: "React",
+    iconName: "react",
+    url: "https://legacy.reactjs.org/docs/getting-started.html",
+  },
+  {
+    name: "JavaScript",
+    iconName: "javascript",
+    url: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript",
+  },
+  {
+    name: "CSS 3",
+    iconName: "css3",
+    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  {
+    name: "HTML 5",
+    iconName: "html5",
+    url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    name: "NodeJS",
+    iconName: "nodejs",
+    url: "https://nodejs.org/docs/latest/api/",
+  },
+  {
+    name: "MongoDB",
+    iconName: "mongodb",
+    url: "https://www.mongodb.com/docs/drivers/node/current/",
+  },
+  { name: "MySQL", iconName: "mysql", url: "https://dev.mysql.com/doc/" },
+  {
+    name: "Express",
+    iconName: "express",
+    url: "https://expressjs.com/en/5x/api.html",
+  },
+  { name: "JQuery", iconName: "jquery", url: "https://api.jquery.com/" },
+  { name: "Git", iconName: "git", url: "https://git-scm.com/doc" },
+  { name: "Sequelize", iconName: "sequelize", url: "https://sequelize.org/" },
+  { name: "Heroku", iconName: "heroku", url: "https://devcenter.heroku.com/" },
 ];

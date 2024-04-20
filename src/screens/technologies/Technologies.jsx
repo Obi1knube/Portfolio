@@ -11,6 +11,8 @@ import JqueryOriginalIcon from "react-devicons/jquery/original";
 import GitOriginalIcon from "react-devicons/git/original";
 import MongodbOriginalIcon from "react-devicons/mongodb/original";
 import MysqlOriginalIcon from "react-devicons/mysql/original";
+import SequelizeOriginalIcon from "react-devicons/sequelize/original";
+import HerokuOriginalIcon from "react-devicons/heroku/original";
 import { techs } from "../../helpers/techs";
 
 function Technologies() {
@@ -24,7 +26,7 @@ function Technologies() {
       <div className=" tech_cards_container">
         {techs.map((e, idx) => {
           let IconComponent = null;
-          let iconSize ="10rem";
+          let iconSize = "10rem";
           switch (e.iconName) {
             case "react":
               IconComponent = ReactOriginalIcon;
@@ -56,6 +58,12 @@ function Technologies() {
             case "git":
               IconComponent = GitOriginalIcon;
               break;
+            case "sequelize":
+              IconComponent = SequelizeOriginalIcon;
+              break;
+            case "heroku":
+              IconComponent = HerokuOriginalIcon;
+              break;
 
             default:
               IconComponent = () => null; // Default case to render nothing
@@ -63,7 +71,10 @@ function Technologies() {
           }
           return (
             <div key={idx} className="tech_icon">
-              <IconComponent className="tech_card" style={{fontSize:iconSize}} />
+              <IconComponent
+                className="tech_card"
+                style={{ fontSize: iconSize }}
+              />
               <span style={{ margin: "5px", fontSize: "1.5rem" }}>
                 {e.name}{" "}
               </span>
