@@ -4,6 +4,7 @@ import "./App.css";
 import Particles from "./Particles";
 import Header from "./screens/header/Header";
 import AboutMe from "./screens/aboutMe/AboutMe";
+import Technologies from "./screens/technologies/Technologies";
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <Navigation />
       <Header />
       <Particles />
-      <AboutMe/>
+      <AboutMe />
+      <Technologies />
     </div>
   );
 }
