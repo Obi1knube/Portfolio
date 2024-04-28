@@ -1,0 +1,72 @@
+import React, { useState } from "react";
+import { Container, Row, Card, Image, Modal, Button } from "react-bootstrap";
+import portfolioData from "../../helpers/portfolioData";
+import "./portfolio.css";
+
+function Portfolio() {
+  const [modalShow, setModalShow] = useState(false);
+  const [tempData, setTempData] = useState({});
+
+  function createModal(data) {
+    return (
+      <Modal show={modalShow} onHide={() => setModalShow(false)} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            {data.desc}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            <p> {data.summary} </p>
+            <Image src={data.image} style={{width: '200px'}}/>
+        </Modal.Body>
+   <a id="portfolio_modal_link" href=
+   {data.link} target="_blank" rel="noreferrer" > Go to site</a>
+   <Modal.Footer>
+    <div> Technologies used:</div>
+    <p style={{fontSize:'0.7rem', marginRight:'auto'}}>{data.tech}</p>
+    <Button onClick ={() => setModalShow(false)}> Close </Button>
+   </Modal.Footer>
+      </Modal>
+    );
+  }
+
+  const mapped = portfolioData.map((e, idx) => {
+    return (
+      <Card key={idx} id="portfolio_card_container">
+        <Image
+          className="portfolio_image"
+          onClick={() => {
+            setTempData({
+              image: e.image,
+              link: e.link,
+              desc: e.desc,
+              summary: e.summary,
+              tech: e.tech,
+            });
+            setModalShow(true); // Show the modal when image is clicked
+          }}
+          src={e.image}
+        />
+        <div className="portfolio_click_info">&#x1F50E;&#xFE0E;</div>
+      </Card>
+    );
+  });
+
+  return (
+    <div className="portfolio_main_container" id="portfolio">
+      <h1>PORTFOLIO</h1>
+      <p>
+        This is my Github Page
+        <a href="https://github.com/Obi1knube" target="_blank" rel="noreferrer">
+          https://github.com/Obi1knube
+        </a>
+      </p>
+      <Container fluid style={{ padding: "2rem 0" }}>
+        <Row>{mapped}</Row>
+      </Container>
+      {createModal(tempData)}
+    </div>
+  );
+}
+
+export default Portfolio;

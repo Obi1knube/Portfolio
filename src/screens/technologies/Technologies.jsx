@@ -13,6 +13,9 @@ import MongodbOriginalIcon from "react-devicons/mongodb/original";
 import MysqlOriginalIcon from "react-devicons/mysql/original";
 import SequelizeOriginalIcon from "react-devicons/sequelize/original";
 import HerokuOriginalIcon from "react-devicons/heroku/original";
+import HandlebarsOriginalIcon from "react-devicons/handlebars/original";
+import GraphQLOriginalIcon from "react-devicons/graphql/plain-wordmark";
+import InsomniaOriginalIcon from "react-devicons/insomnia/original";
 import { techs } from "../../helpers/techs";
 
 function Technologies() {
@@ -63,6 +66,15 @@ function Technologies() {
               break;
             case "heroku":
               IconComponent = HerokuOriginalIcon;
+              break;
+            case "handlebars":
+              IconComponent = HandlebarsOriginalIcon;
+              break;
+            case "graphql":
+              IconComponent = GraphQLOriginalIcon;
+              break;
+            case "insomnia":
+              IconComponent = InsomniaOriginalIcon;
               break;
 
             default:

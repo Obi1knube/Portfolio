@@ -21,7 +21,7 @@ export const techs = [
     url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
-    name: "NodeJS",
+    name: "Node.js",
     iconName: "nodejs",
     url: "https://nodejs.org/docs/latest/api/",
   },
@@ -32,7 +32,7 @@ export const techs = [
   },
   { name: "MySQL", iconName: "mysql", url: "https://dev.mysql.com/doc/" },
   {
-    name: "Express",
+    name: "Express.js",
     iconName: "express",
     url: "https://expressjs.com/en/5x/api.html",
   },
@@ -40,4 +40,19 @@ export const techs = [
   { name: "Git", iconName: "git", url: "https://git-scm.com/doc" },
   { name: "Sequelize", iconName: "sequelize", url: "https://sequelize.org/" },
   { name: "Heroku", iconName: "heroku", url: "https://devcenter.heroku.com/" },
+  {
+    name: "Handlebars.js",
+    iconName: "handlebars",
+    url: "https://www.npmjs.com/package/handlebars",
+  },
+  {
+    name: "GraphQL.js",
+    iconName: "graphql",
+    url: "https://www.npmjs.com/package/graphql?activeTab=readme",
+  },
+  {
+    name: "Insomnia",
+    iconName: "insomnia",
+    url: "https://docs.insomnia.rest/insomnia/introduction-to-plugins",
+  },
 ];
