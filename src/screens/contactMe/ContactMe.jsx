@@ -19,6 +19,7 @@ function contactMe() {
           <p>Birmingham, UK</p>
           <p> Obiora Ezeasor</p>
           <p> obi1knube@hotmail.com</p>
+          <p>(+44) 783 346 4281 </p>
         </div>
         <div>{createLinks()}</div>
       </div>
