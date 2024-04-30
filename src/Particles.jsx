@@ -54,7 +54,7 @@ export default class Particles extends React.Component {
 
     // Function to draw the particles on the canvas
     const draw = () => {
-      ctx.fillStyle = "blue";
+      ctx.fillStyle = "green";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       // Loop through each particle and draw connections and particles
