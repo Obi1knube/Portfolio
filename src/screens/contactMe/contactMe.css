@@ -17,6 +17,10 @@ contactMe_data_links a{
 contactMe_data_links a:hover{
     color: var(--light-color);
 }
+container_contactForm{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 @media screen and (max-width:600px)  {
     .contactMe_data_links{

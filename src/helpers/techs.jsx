@@ -55,4 +55,4 @@ export const techs = [
     iconName: "insomnia",
     url: "https://docs.insomnia.rest/insomnia/introduction-to-plugins",
   },
-];
+  ];
