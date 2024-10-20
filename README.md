@@ -1,10 +1,1 @@
-# To execute project:
-
-- npm run dev
-
-# To build before deployment:
-
-- npm run build
-
-
-It seems like you want to create a contact form in a React component. Here's an example of how you can create a simple contact form in React:
+My Portfolio is deployed in Netlify at: https://portfolio-obiora-ezeasor.netlify.app/?fbclid=IwZXh0bgNhZW0CMTEAAR3X5uZjujhIhlFRc3KRplMnjWmElYZ8iwv-WsDZpxFXIscMDFLjUcfe7kM_aem_AQTfmEA-j2wrrL7b4nnbIeEtLwTUcEZl8mJrNn-I86h3N7H76Q8oenqOAnPFbwoTw5u5CRfkd85ZmUYjAY4fK5kN
